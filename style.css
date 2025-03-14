@@ -1,0 +1,125 @@
+*{
+    font-family: montserrat;
+}
+body{
+    background: #f1fbff;
+}
+.arquitecta-text {
+    display: block; /* Hace que aparezca en una nueva línea */
+    font-size: 16px; /* Tamaño más pequeño */
+    color: white; /* Color negro */
+    font-weight: normal; /* Sin negrita */
+    line-height: 1; /* Reduce el espacio vertical */
+}
+
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+#carouselExampleDark .carousel-caption {
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    font-weight: 500;
+/*    text-transform: uppercase;*/
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: 600;
+}
+.w-100{
+    height: 100vh;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*    === responsive css ===    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption{
+        width: 100%;
+    }    
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 225px;
+    }
+    .carousel-caption h5{
+        font-size: 37px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    } 
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;        
+    }
+}
